@@ -33,7 +33,7 @@
 </head>
 <body>
   <header>
-    <h1>Localization Practice</h1>
+    <h1>Localization</h1>
     <div class="form-check form-switch d-flex align-items-center gap-2 languge-content">
         <p class="language-text">English</p>
         <div>
@@ -41,11 +41,12 @@
                 type="checkbox" {{ Session::get('locale') == 'bn' ? 'checked' : '' }} />
         </div>
         <p class="language-text">বাংলা</p>
-    </div>  </header>
+    </div>
+ </header>
 
-  <main>
-    <p>{{ __('Home') }}</p>
-    <p>{{ __('Contact') }}</p>
+  <main class="container">
+    <h4 >{{ __('Home') }}</h4>
+    <h4>{{ __('Contact') }}</h4>
 
 
   </main>
